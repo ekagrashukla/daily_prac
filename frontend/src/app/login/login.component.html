@@ -1,0 +1,13 @@
+<div class="container">
+<div class="wrapper">
+    <a routerLink="/profile"><button *ngIf="islogin==true">Profile</button></a>
+    <p *ngIf="wrongcred==true">Wrong Credentials!! Try again</p>
+    <form [formGroup]="form">
+        <label>Username</label>
+        <input type="text" placeholder="username" formControlName="username"/><br/><br/>
+        <label>Password</label>
+        <input type="password" formControlName="password"/><br/><br/>
+        <button (click)="submit()">Login</button><br/><br/>
+    </form>
+    </div>  
+</div>

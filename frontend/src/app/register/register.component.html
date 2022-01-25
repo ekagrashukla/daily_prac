@@ -1,0 +1,15 @@
+<div class="container">
+<div class="wrapper">
+<form [formGroup]="form">
+    <label>Username</label>
+    <input type="text" placeholder="username" formControlName="username"/><br/><br/>
+    <label>Password</label>
+    <input type="password" formControlName="password"/><br/><br/>
+    <label>First Name</label>
+    <input type="text" formControlName="firstname"/><br/><br/>
+    <label>Lastname</label>
+    <input type="text" formControlName="lastname"/><br/><br/>
+    <button (click)="submit()">Register</button><br/><br/>
+</form>
+</div>
+</div>
